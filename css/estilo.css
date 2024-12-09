@@ -72,6 +72,14 @@ section {
     height: 100%;
     padding: 10rem 9% 2rem;
     background: var(--bg-color);
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+}
+section.active {
+    visibility: visible;
+    opacity: 1;
+    overflow: auto;
 }
 section.home {
     display: flex;
@@ -85,6 +93,37 @@ section > div.home-detalhes h2 {
     display: inline-block;
     font-size: 3.2rem;
     margin: -1rem 0 0 0;
+}
+section > div.home-detalhes h2 span {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: .07rem var(--principal-color);
+    animation: display-text 16s linear infinite;
+    animation-delay: calc(-4s * var(--i));
+}
+@keyframes display-text {
+    25%, 100% {
+        display: none;
+    }
+}
+section > div.home-detalhes h2 span::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    border-right: .2rem solid var(--principal-color);
+    color: var(--principal-color);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fill-text 4s linear infinite;
+}
+@keyframes fill-text {
+    10%, 100% {
+        width: 0;
+    }
+    70%, 90% {
+        width: 100%;
+    }
 }
 section > div.home-detalhes p {
     font-size: 1.6rem;
@@ -176,4 +215,115 @@ section > div.home-img > div.img-box > div.img-item img {
     width: 85%;
     object-fit: cover;
     mix-blend-mode: lighten;
+}
+/* início da segunda section */
+section.services > h2.heading {
+    font-size: 4.5rem;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+section.services > h2.heading span {
+    color: var(--principal-color);
+}
+section.services > div.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+section.services > div.services-container > div.services-box {
+    padding: 3rem 2.5rem;
+    background: var(--segunda-bg-color);
+    border: .2rem solid var(--segunda-bg-color);
+    border-radius: 1rem;
+}
+section.services > div.services-container > div.services-box:hover {
+    border-color: var(--principal-color);
+    transform: scale(1.02);
+    cursor: pointer;
+}
+section.services > div.services-container > div.services-box > div.icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section.services > div.services-container > div.services-box > div.icon i {
+    font-size: 4.5rem;
+    transition: .5s;
+}
+section.services > div.services-container > div.services-box:hover > div.icon :not(a i) {
+    color: var(--principal-color);
+}
+section.services > div.services-container > div.services-box > div.icon a {
+    display: inline-flex;
+    background: var(--branco-color);
+    border-radius: 50%;
+    padding: 1rem;
+    transition: .5s;
+}
+section.services > div.services-container > div.services-box:hover > div.icon a {
+    background: var(--principal-color);
+}
+section.services > div.services-container > div.services-box > div.icon a i {
+    font-size: 3rem;
+    color: var(--bg-color);
+    transform: rotate(225deg);
+}
+section.services > div.services-container > div.services-box > div.icon a:hover i {
+    transform: rotate(180deg);
+}
+section.services > div.services-container > div.services-box > h3 {
+    font-size: 3rem;
+    margin: .5rem 0 2rem;
+    transition: .5s;
+}
+section.services > div.services-container > div.services-box:hover > h3 {
+    color: var(--principal-color);
+}
+section.services > div.services-container > div.services-box > p {
+    font-size: 1.6rem;
+    text-align: justify;
+}
+/* configuração da terceira section */
+section.resume > div.resume-container > div.resume-box > div.resume-detail > h2.heading {
+    font-size: 4.5rem;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+section.resume > div.resume-container > div.resume-box > div.resume-detail > h2.heading span {
+    color: var(--principal-color);
+}
+section.resume > div.resume-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5rem;
+}
+section.resume > div.resume-container > div.resume-box h2 {
+    font-size: 2.4rem;
+}
+section.resume > div.resume-container > div.resume-box p {
+    font-size: 1.6rem;
+    margin: 2rem 0 2.5rem;
+}
+section.resume > div.resume-container > div.resume-box > div.resume-detail > p.desc {
+    margin: 2rem 0 2.5rem;
+}
+section.resume > div.resume-container > div.resume-box > button.resume-btn {
+    width: 100%;
+    height: 5.3rem;
+    background: var(--segunda-bg-color);
+    border: .2rem solid var(--segunda-bg-color);
+    font-size: 1.6rem;
+    color: var(--branco-color);
+    font-weight: 500;
+    margin-bottom: 2rem;
+    border-radius: .8rem;
+    cursor: pointer;
+}
+section.resume > div.resume-container > div.resume-box > button.resume-btn.active {
+    border-color: var(--principal-color);
+    color: var(--principal-color);
+}
+section.resume > div.resume-container > div.resume-box > div.resume-detail > h2.heading {
+    font-size: 3.5rem;
+    text-align: left;
 }
