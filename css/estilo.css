@@ -650,6 +650,11 @@ section.portfolio>div.portfolio-container>div.portfolio-box>div.navigation>butto
     cursor: pointer;
 }
 
+section.portfolio>div.portfolio-container>div.portfolio-box>div.navigation>button.disabled {
+    border-color: var(--segunda-bg-color);
+    color: var(--disabled-color);
+}
+
 section.portfolio>div.portfolio-container>div.portfolio-box>div.navigation>button.arrow-right {
     margin-left: 1.5rem;
 }
