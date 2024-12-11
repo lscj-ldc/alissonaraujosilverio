@@ -61,10 +61,11 @@ header>nav>a.active {
     color: var(--fonte-color);
 }
 
-header i#icone-menu {
+header>i#icone-menu {
     font-size: 4rem;
     display: none;
 }
+
 /* configuração da primeira sessão */
 section {
     position: absolute;
@@ -76,25 +77,30 @@ section {
     opacity: 0;
     overflow: hidden;
 }
+
 section.active {
     visibility: visible;
     opacity: 1;
     overflow: auto;
 }
+
 section.home {
     display: flex;
     align-items: center;
     gap: 5rem;
 }
-section > div.home-detalhes h1 {
+
+section>div.home-detalhes>h1 {
     font-size: clamp(3.5rem, 10vw, 5.5rem);
 }
-section > div.home-detalhes h2 {
+
+section>div.home-detalhes>h2 {
     display: inline-block;
     font-size: 3.2rem;
     margin: -1rem 0 0 0;
 }
-section > div.home-detalhes h2 span {
+
+section>div.home-detalhes>h2>span {
     position: relative;
     display: inline-block;
     color: transparent;
@@ -102,12 +108,16 @@ section > div.home-detalhes h2 span {
     animation: display-text 16s linear infinite;
     animation-delay: calc(-4s * var(--i));
 }
+
 @keyframes display-text {
-    25%, 100% {
+
+    25%,
+    100% {
         display: none;
     }
 }
-section > div.home-detalhes h2 span::before {
+
+section>div.home-detalhes>h2>span::before {
     content: attr(data-text);
     position: absolute;
     width: 0;
@@ -117,23 +127,31 @@ section > div.home-detalhes h2 span::before {
     overflow: hidden;
     animation: fill-text 4s linear infinite;
 }
+
 @keyframes fill-text {
-    10%, 100% {
+
+    10%,
+    100% {
         width: 0;
     }
-    70%, 90% {
+
+    70%,
+    90% {
         width: 100%;
     }
 }
-section > div.home-detalhes p {
+
+section>div.home-detalhes>p {
     font-size: 1.6rem;
     margin: 1rem 0 2.5rem;
 }
-section > div.home-detalhes > div.botao-sci {
+
+section>div.home-detalhes>div.botao-sci {
     display: flex;
     align-items: center;
 }
-section > div.home-detalhes > div.botao-sci > a.botao {
+
+section>div.home-detalhes>div.botao-sci>a.botao {
     display: inline-block;
     padding: 1rem 3rem;
     background: var(--principal-color);
@@ -145,15 +163,18 @@ section > div.home-detalhes > div.botao-sci > a.botao {
     font-weight: 500;
     transition: .5s;
 }
-section > div.home-detalhes > div.botao-sci > a.botao:hover {
+
+section>div.home-detalhes>div.botao-sci>a.botao:hover {
     background: transparent;
     color: var(--principal-color);
     box-shadow: none;
 }
-section > div.home-detalhes > div.botao-sci > div.sci {
+
+section>div.home-detalhes>div.botao-sci>div.sci {
     margin-left: 2rem;
 }
-section > div.home-detalhes > div.botao-sci > div.sci a {
+
+section>div.home-detalhes>div.botao-sci>div.sci>a {
     display: inline-flex;
     padding: 0.8rem;
     border: .2rem solid var(--principal-color);
@@ -163,12 +184,14 @@ section > div.home-detalhes > div.botao-sci > div.sci a {
     margin: 0 0.8rem;
     transition: .5s;
 }
-section > div.home-detalhes > div.botao-sci > div.sci a:hover {
+
+section>div.home-detalhes>div.botao-sci>div.sci>a:hover {
     background: var(--principal-color);
     color: var(--bg-color);
     box-shadow: 0 0 1rem var(--principal-color);
 }
-section > div.home-img > div.img-box {
+
+section>div.home-img>div.img-box {
     position: relative;
     width: 32vw;
     height: 32vw;
@@ -179,7 +202,9 @@ section > div.home-img > div.img-box {
     align-items: center;
     overflow: hidden;
 }
-section > div.home-img > div.img-box::before, section > div.home-img > div.img-box::after {
+
+section>div.home-img>div.img-box::before,
+section>div.home-img>div.img-box::after {
     content: '';
     position: absolute;
     width: 50rem;
@@ -188,15 +213,18 @@ section > div.home-img > div.img-box::before, section > div.home-img > div.img-b
     transform: rotate(0deg);
     animation: rotate-border 10s linear infinite;
 }
-section > div.home-img > div.img-box::after {
+
+section>div.home-img>div.img-box::after {
     animation-delay: -5s;
 }
+
 @keyframes rotate-border {
     100% {
         transform: rotate(360deg);
     }
 }
-section > div.home-img > div.img-box > div.img-item {
+
+section>div.home-img>div.img-box>div.img-item {
     position: relative;
     width: 100%;
     height: 100%;
@@ -208,7 +236,8 @@ section > div.home-img > div.img-box > div.img-item {
     z-index: 1;
     overflow: hidden;
 }
-section > div.home-img > div.img-box > div.img-item img {
+
+section>div.home-img>div.img-box>div.img-item>img {
     position: absolute;
     margin: 3rem 0 0 0;
     display: block;
@@ -216,98 +245,120 @@ section > div.home-img > div.img-box > div.img-item img {
     object-fit: cover;
     mix-blend-mode: lighten;
 }
+
 /* início da segunda section */
-section.services > h2.heading {
+section.services>h2.heading {
     font-size: 4.5rem;
     text-align: center;
     margin: 0 0 2rem 0;
 }
-section.services > h2.heading span {
+
+section.services>h2.heading>span {
     color: var(--principal-color);
 }
-section.services > div.services-container {
+
+section.services>div.services-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
 }
-section.services > div.services-container > div.services-box {
+
+section.services>div.services-container>div.services-box {
     padding: 3rem 2.5rem;
     background: var(--segunda-bg-color);
     border: .2rem solid var(--segunda-bg-color);
     border-radius: 1rem;
 }
-section.services > div.services-container > div.services-box:hover {
+
+section.services>div.services-container>div.services-box:hover {
     border-color: var(--principal-color);
     transform: scale(1.02);
     cursor: pointer;
 }
-section.services > div.services-container > div.services-box > div.icon {
+
+section.services>div.services-container>div.services-box>div.icon {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-section.services > div.services-container > div.services-box > div.icon i {
+
+section.services>div.services-container>div.services-box>div.icon>i {
     font-size: 4.5rem;
     transition: .5s;
 }
-section.services > div.services-container > div.services-box:hover > div.icon :not(a i) {
+
+section.services>div.services-container>div.services-box:hover>div.icon> :not(a > i) {
     color: var(--principal-color);
 }
-section.services > div.services-container > div.services-box > div.icon a {
+
+section.services>div.services-container>div.services-box>div.icon>a {
     display: inline-flex;
     background: var(--branco-color);
     border-radius: 50%;
     padding: 1rem;
     transition: .5s;
 }
-section.services > div.services-container > div.services-box:hover > div.icon a {
+
+section.services>div.services-container>div.services-box:hover>div.icon>a {
     background: var(--principal-color);
 }
-section.services > div.services-container > div.services-box > div.icon a i {
+
+section.services>div.services-container>div.services-box>div.icon>a>i {
     font-size: 3rem;
     color: var(--bg-color);
     transform: rotate(225deg);
 }
-section.services > div.services-container > div.services-box > div.icon a:hover i {
+
+section.services>div.services-container>div.services-box>div.icon>a:hover>i {
     transform: rotate(180deg);
 }
-section.services > div.services-container > div.services-box > h3 {
+
+section.services>div.services-container>div.services-box>h3 {
     font-size: 3rem;
     margin: .5rem 0 2rem;
     transition: .5s;
 }
-section.services > div.services-container > div.services-box:hover > h3 {
+
+section.services>div.services-container>div.services-box:hover>h3 {
     color: var(--principal-color);
 }
-section.services > div.services-container > div.services-box > p {
+
+section.services>div.services-container>div.services-box>p {
     font-size: 1.6rem;
     text-align: justify;
 }
+
 /* configuração da terceira section */
-section.resume > div.resume-container > div.resume-box > div.resume-detail > h2.heading {
+section.resume>div.resume-container>div.resume-box>div.resume-detail>h2.heading {
     font-size: 4.5rem;
     text-align: center;
     margin: 0 0 2rem 0;
 }
-section.resume > div.resume-container > div.resume-box > div.resume-detail > h2.heading span {
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail>h2.heading>span {
     color: var(--principal-color);
 }
-section.resume > div.resume-container {
+
+section.resume>div.resume-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 5rem;
 }
-section.resume > div.resume-container > div.resume-box h2 {
+
+section.resume>div.resume-container>div.resume-box>h2 {
     font-size: 2.4rem;
 }
-section.resume > div.resume-container > div.resume-box p {
+
+section.resume>div.resume-container>div.resume-box>p {
     font-size: 1.6rem;
     margin: 2rem 0 2.5rem;
 }
-section.resume > div.resume-container > div.resume-box > div.resume-detail > p.desc {
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail>p.desc {
     margin: 2rem 0 2.5rem;
 }
-section.resume > div.resume-container > div.resume-box > button.resume-btn {
+
+section.resume>div.resume-container>div.resume-box>button.resume-btn {
     width: 100%;
     height: 5.3rem;
     background: var(--segunda-bg-color);
@@ -319,11 +370,240 @@ section.resume > div.resume-container > div.resume-box > button.resume-btn {
     border-radius: .8rem;
     cursor: pointer;
 }
-section.resume > div.resume-container > div.resume-box > button.resume-btn.active {
+
+section.resume>div.resume-container>div.resume-box>button.resume-btn.active {
     border-color: var(--principal-color);
     color: var(--principal-color);
 }
-section.resume > div.resume-container > div.resume-box > div.resume-detail > h2.heading {
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail {
+    display: none;
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail.active {
+    display: block;
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail>h2.heading {
     font-size: 3.5rem;
     text-align: left;
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail>div.resume-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    height: 45rem;
+    overflow: auto;
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail>div.resume-list::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail>div.resume-list::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 1rem;
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail>div.resume-list:hover::-webkit-scrollbar-thumb {
+    background: var(--principal-color);
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail>div.resume-list>div.resume-item {
+    background: var(--segunda-bg-color);
+    border-radius: .8rem;
+    padding: 3rem 2.5rem;
+    height: calc((45rem - 2rem) / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail>div.resume-list>div.resume-item>p.year {
+    color: var(--principal-color);
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail>div.resume-list>div.resume-item>h3 {
+    font-size: 2.2rem;
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail>div.resume-list>div.resume-item>p.company {
+    position: relative;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail>div.resume-list>div.resume-item>p.company::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: .5rem;
+    background: var(--principal-color);
+    border-radius: 50%;
+    margin-left: -2rem;
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail.skills>div.resume-list {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    height: auto;
+    overflow: visible;
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail.skills>div.resume-list>div.resume-item {
+    position: relative;
+    align-items: center;
+    height: auto;
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail.skills>div.resume-list>div.resume-item>i {
+    font-size: 8.5rem;
+    transition: .5s;
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail.skills>div.resume-list>div.resume-item:hover>i {
+    color: var(--principal-color);
+    cursor: pointer;
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail.skills>div.resume-list>div.resume-item>span {
+    position: absolute;
+    top: -20%;
+    background: var(--branco-color);
+    color: var(--bg-color);
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    border-radius: .6rem;
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(.9);
+    transition: .2s;
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail.skills>div.resume-list>div.resume-item:hover>span {
+    top: -25%;
+    opacity: 1;
+    transform: scale(1);
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail.about>p.desc {
+    font-size: 1.6rem;
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail.about>div.resume-list {
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail.about>div.resume-list>div.resume-item {
+    height: auto;
+    padding: 0 0 .5rem;
+    background: transparent;
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail.about>div.resume-list>div.resume-item>p {
+    color: var(--principal-color);
+    font-size: 1.6rem;
+}
+
+section.resume>div.resume-container>div.resume-box>div.resume-detail.about>div.resume-list>div.resume-item>p>span {
+    color: var(--branco-color);
+    margin-left: 1rem;
+    font-size: 1.6rem;
+}
+
+/* quarta section */
+section.portfolio>h2.heading {
+    font-size: 4.5rem;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+section.portfolio>h2.heading>span {
+    color: var(--principal-color);
+}
+
+section.portfolio>div.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+section.portfolio>div.portfolio-container>div.portfolio-box>div.portfolio-detail {
+    display: none;
+}
+
+section.portfolio>div.portfolio-container>div.portfolio-box>div.portfolio-detail.active {
+    display: block;
+}
+
+section.portfolio>div.portfolio-container>div.portfolio-box>div.portfolio-detail>p.numb {
+    font-size: 8rem;
+    -webkit-text-stroke: .07rem var(--branco-color);
+    color: transparent;
+    line-height: 1;
+}
+
+section.portfolio>div.portfolio-container>div.portfolio-box>div.portfolio-detail>h3 {
+    font-size: 3.5rem;
+    margin: .8rem 0 2rem;
+}
+
+section.portfolio>div.portfolio-container>div.portfolio-box>div.portfolio-detail>p {
+    font-size: 1.6rem;
+}
+
+section.portfolio>div.portfolio-container>div.portfolio-box>div.portfolio-detail>div.tech {
+    margin: 2rem 0;
+    color: var(--principal-color);
+    border-bottom: .1rem solid var(--branco-color);
+    padding-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+section.portfolio>div.portfolio-container>div.portfolio-box>div.portfolio-detail>div.live-github>a {
+    position: relative;
+    display: inline-flex;
+    padding: 1.3rem;
+    font-size: 3rem;
+    color: var(--branco-color);
+    border-radius: 50%;
+    background: var(--segunda-bg-color);
+    transition: .5s;
+}
+
+section.portfolio>div.portfolio-container>div.portfolio-box>div.portfolio-detail>div.live-github>a:hover {
+    color: var(--principal-color);
+}
+
+section.portfolio>div.portfolio-container>div.portfolio-box>div.portfolio-detail>div.live-github>a:first-child {
+    margin-right: 1.5rem;
+}
+
+section.portfolio>div.portfolio-container>div.portfolio-box>div.portfolio-detail>div.live-github>a:first-child>i {
+    transform: rotate(135deg);
+}
+
+section.portfolio>div.portfolio-container>div.portfolio-box>div.portfolio-detail>div.live-github>a>span {
+    position: absolute;
+    top: -60%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.6rem;
+    white-space: nowrap;
+    padding: .5rem 1rem;
+    border-radius: .6rem;
+    pointer-events: none;
+    background: var(--branco-color);
+    color: var(--bg-color);
+    opacity: 0;
+    scale: .9;
+    transition: .2s;
+}
+
+section.portfolio>div.portfolio-container>div.portfolio-box>div.portfolio-detail>div.live-github>a:hover>span {
+    top: -70%;
+    opacity: 1;
+    scale: 1;
 }
