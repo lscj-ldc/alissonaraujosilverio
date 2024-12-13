@@ -39,4 +39,4 @@ arrowLeft.addEventListener('click', () => {
         index = 0;
     }
     activePortfolio();
-});
+});/* 01:14:38 */
