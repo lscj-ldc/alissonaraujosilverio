@@ -26,51 +26,44 @@ Grandes Telas: acima de 1200px*/
     --preto: #000000;
 }
 
+html,
 body {
     background-color: var(--branco);
+    height: 100%;
+    width: 100%;
 }
 
 /* menu principal */
 .cabecalho {
     background: var(--laranja-fundo);
-    padding-inline: 16px;
 }
 .nav {
-    max-width: 1280px;
-    height: 70px;
-    margin-inline: auto;
+    padding: 10px 30px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 70px;
 }
 .logo {
-    font-size: 1em;
     color: var(--laranja-fonte);
 }
-.nav-list {
+.nav ul {
     display: flex;
-    gap: 32px;
+    gap: 30px;
+}
+.nav ul li {
     list-style: none;
 }
-.nav-list a {
-    font-size: 1.2em;
+.nav ul li a {
+    text-decoration: none;
     color: var(--branco);
-    padding-block: 16px;
 }
-.hamburger {
+.menu-icon {
     display: none;
-    border: none;
-    background: none;
-    border-top: 3px solid var(--branco);
-    cursor: pointer;
 }
-.hamburger::before, .hamburger::after {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 3px;
-    background: var(--branco);
-    margin-top: 5px;
-    position: relative;
-    transition: .3s;
+.menu-icon {
+    color: var(--branco);
+    font-size: 30px;
+    display: none;
 }

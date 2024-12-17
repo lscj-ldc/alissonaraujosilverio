@@ -1,3 +1,9 @@
-const hamburger = document.querySelector(".hamburger");
-const nav = document.querySelector(".nav");
-hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+let menuList = document.getElementById("menuList")
+menuList.style.maxHeight = "0px";
+function toggleMenu() {
+    if (menuList.style.maxHeight = "0px") {
+        menuList.style.maxHeight = "300px";
+    } else {
+        menuList.style.maxHeight = "0px";
+    }
+}
