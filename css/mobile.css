@@ -27,21 +27,15 @@ Grandes Telas: acima de 1200px*/
 }
 
 @media (max-width: 800px) {
-    .nav ul {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        text-align: center;
-        background: var(--laranja-fundo);
-        gap: 0;
-        overflow: hidden;
+    .nav .hideOnMobile {
+        display: none;
     }
-    .nav ul li {
-        padding: 20px;
-    }
-    .menu-icon {
+    .nav .menu-button {
         display: block;
+    }
+}
+@media (max-width: 400px) {
+    .nav .sidebar {
+        width: 100%;
     }
 }
