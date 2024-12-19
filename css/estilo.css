@@ -119,24 +119,54 @@ body {
     width: 100%;
     height: auto;
 }
+
 /* início da segunda section */
 .segunda-secao {
     margin: auto;
     align-items: center;
     height: auto;
     column-count: 3;
+    display: flex;
+    flex-flow: row wrap;
 }
+
+.segunda-secao section {
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px;
+}
+
 .segunda-secao h1 {
     text-align: center;
 }
+
 .segunda-secao img {
     margin: auto;
     display: flex;
 }
+
 .segunda-secao figcaption {
     width: 100%;
     height: auto;
     margin: auto;
     text-align: justify;
     max-width: 280px;
+}
+/* configuração do button */
+.segunda-secao button {
+    background-color: var(--laranja);
+    margin: 10px auto;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+}
+.segunda-secao button:hover {
+    background-color: var(--branco);
+}
+.segunda-secao button a {
+    color: var(--branco);
+}
+.segunda-secao button a:hover {
+    color: var(--laranja-fonte);
 }

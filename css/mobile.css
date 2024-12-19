@@ -25,12 +25,12 @@ Grandes Telas: acima de 1200px*/
     --laranja-fundo: #f8cca7;
     --disabled-color: #000000;
 }
-
+/*
 @media (max-width: 964px) {
     .segunda-secao {
         
     }
-}
+}*/
 @media (max-width: 800px) {
     .nav .hideOnMobile {
         display: none;
