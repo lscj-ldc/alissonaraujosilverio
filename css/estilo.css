@@ -104,8 +104,10 @@ body {
 }
 
 .primeira-secao figure img {
-    width: 100%;
+    width: 60%;
     height: auto;
+    margin: 4px auto;
+    display: flex;
 }
 
 .primeira-secao figcaption {
@@ -116,4 +118,25 @@ body {
     text-align: center;
     width: 100%;
     height: auto;
+}
+/* início da segunda section */
+.segunda-secao {
+    margin: auto;
+    align-items: center;
+    height: auto;
+    column-count: 3;
+}
+.segunda-secao h1 {
+    text-align: center;
+}
+.segunda-secao img {
+    margin: auto;
+    display: flex;
+}
+.segunda-secao figcaption {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: justify;
+    max-width: 280px;
 }
