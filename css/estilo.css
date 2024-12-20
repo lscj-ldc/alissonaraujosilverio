@@ -123,7 +123,7 @@ body {
 /* início da segunda section */
 .segunda-secao {
     margin: auto;
-    align-items: center;
+    /*align-items: center;*/
     height: auto;
     column-count: 3;
     display: flex;
@@ -131,10 +131,13 @@ body {
 }
 
 .segunda-secao section {
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
     padding: 30px;
+}
+.segunda-secao figure {
+    height: 100%;
 }
 
 .segunda-secao h1 {
@@ -149,9 +152,10 @@ body {
 .segunda-secao figcaption {
     width: 100%;
     height: auto;
-    margin: auto;
+    margin: 5px auto;
     text-align: justify;
     max-width: 280px;
+    min-height: 148px;
 }
 /* configuração do button */
 .segunda-secao button {
@@ -170,3 +174,4 @@ body {
 .segunda-secao button a:hover {
     color: var(--laranja-fonte);
 }
+/* configuração da apresentação */
