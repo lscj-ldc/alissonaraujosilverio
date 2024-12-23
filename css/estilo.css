@@ -355,6 +355,25 @@ body {
     width: 70vw;
 }
 
+/* início da página serviços */
+.servico h1 {
+    color: var(--laranja-fonte);
+    margin: auto;
+    width: 80vw;
+}
+.servico p {
+    color: var(--preto);
+    text-align: justify;
+    margin: auto;
+    width: 80vw;
+}
+.servico .servico-imagem img {
+    display: flex;
+    width: 500px;
+    height: auto;
+    margin: auto;
+}
+
 footer {
     background: var(--laranja-fundo);
     color: var(--branco);
