@@ -16,15 +16,15 @@
             <menu>
                 <ul class="sidebar">
                     <li onclick="hideSidebar()"><a href="#"><i class="bx bx-x"></i></a></li>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#fotos">Fotos</a></li>
                     <li><a href="#orcamento">Solicitar Orçamento</a></li>
                 </ul>
                 <ul class="menuList">
                     <li><a href="index.html">Alisson Araujo</a></li>
-                    <li class="hideOnMobile"><a href="#sobre">Sobre</a></li>
+                    <li class="hideOnMobile"><a href="sobre.html">Sobre</a></li>
                     <li class="hideOnMobile"><a href="#servicos">Serviços</a></li>
                     <li class="hideOnMobile"><a href="#fotos">Fotos</a></li>
                     <li class="hideOnMobile"><a href="#orcamento">Solicitar Orçamento</a></li>
@@ -76,40 +76,59 @@
             </section>
         </section>
         <section class="terceira-secao">
-            <ul class="apresentacao">
-                <li>
-                    <input type="radio" id="apresentacao1" name="apresentacao" checked>
-                    <label for="apresentacao1"></label>
-                    <img src="imagens/portfolio1.jpg" alt="">
-                </li>
-                <li>
-                    <input type="radio" id="apresentacao1" name="apresentacao">
-                    <label for="apresentacao2"></label>
-                    <img src="imagens/portfolio2.jpg" alt="">
-                </li>
-                <li>
-                    <input type="radio" id="apresentacao1" name="apresentacao">
-                    <label for="apresentacao3"></label>
-                    <img src="imagens/portfolio3.jpg" alt="">
-                </li>
-                <li>
-                    <input type="radio" id="apresentacao1" name="apresentacao">
-                    <label for="apresentacao4"></label>
-                    <img src="imagens/portfolio4.jpg" alt="">
-                </li>
-                <li>
-                    <input type="radio" id="apresentacao1" name="apresentacao">
-                    <label for="apresentacao5"></label>
-                    <img src="imagens/portfolio5.jpg" alt="">
-                </li>
-                <li>
-                    <input type="radio" id="apresentacao1" name="apresentacao">
-                    <label for="apresentacao6"></label>
-                    <img src="imagens/portfolio6.jpg" alt="">
-                </li>
-            </ul>
+            <div class="slide">
+                <div class="item" style="background-image: url('../imagens/portfolio1.jpg');">
+                    <div class="content">
+                        <div class="name">Switzerland</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url('../imagens/portfolio2.jpg');">
+                    <div class="content">
+                        <div class="name">Finland</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url('../imagens/portfolio3.jpg');">
+                    <div class="content">
+                        <div class="name">Iceland</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url('../imagens/portfolio4.jpg');">
+                    <div class="content">
+                        <div class="name">Australia</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url('../imagens/portfolio5.jpg');">
+                    <div class="content">
+                        <div class="name">Netherland</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url('../imagens/portfolio6.jpg');">
+                    <div class="content">
+                        <div class="name">Ireland</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="button">
+            <button class="prev"><</button>
+            <button class="next">></button>
         </section>
     </main>
+    <footer>
+        <span>Desenvolvido por Luís da Silveira Carneiro Júnior</span>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 

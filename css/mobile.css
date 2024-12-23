@@ -44,3 +44,17 @@ Grandes Telas: acima de 1200px*/
         width: 100%;
     }
 }
+@media (max-width: 900px) {
+    .terceira-secao {
+        position: relative;
+    display: flex;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100vw;
+    height: 80vh;
+    background: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+    }
+}
