@@ -361,17 +361,36 @@ body {
     margin: auto;
     width: 80vw;
 }
+
 .servico p {
     color: var(--preto);
     text-align: justify;
-    margin: auto;
-    width: 80vw;
+    margin: 10px auto;
+    max-width: 70vw;
 }
+
+.servico .servico-imagem {
+    display: block;
+    margin: 10px auto;
+    max-width: 80vw;
+    height: auto;
+}
+
 .servico .servico-imagem img {
-    display: flex;
-    width: 500px;
+    display: inline;
+    max-width: 500px;
     height: auto;
     margin: auto;
+}
+.servico .servico-imagem-um {
+    width: 80vw;
+    margin: auto;
+}
+.servico .servico-imagem-um figure img {
+    display: inline-block;
+    flex: auto;
+    margin: auto;
+    height: auto;
 }
 
 footer {
