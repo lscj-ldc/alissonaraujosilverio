@@ -28,7 +28,7 @@ Grandes Telas: acima de 1200px*/
 }
 
 body {
-    background-color: var(--rgba);
+    background-color: var(--branco);
     min-height: 100vh;
 }
 
@@ -137,6 +137,7 @@ body {
     flex-flow: row wrap;
     padding: 30px;
 }
+
 .segunda-secao figure {
     height: 100%;
 }
@@ -158,6 +159,7 @@ body {
     max-width: 280px;
     min-height: 148px;
 }
+
 /* configuração do button */
 .segunda-secao button {
     background-color: var(--laranja);
@@ -166,15 +168,19 @@ body {
     padding: 10px;
     border-radius: 5px;
 }
+
 .segunda-secao button:hover {
     background-color: var(--branco);
 }
+
 .segunda-secao button a {
     color: var(--branco);
 }
+
 .segunda-secao button a:hover {
     color: var(--laranja-fonte);
 }
+
 /* configuração da apresentação 
 .item {
     background-image: url('../imagens/portfolio1.jpg');
@@ -206,6 +212,7 @@ body {
     background: #f5f5f5;
     box-shadow: 0 30px 50px #dbdbdb;
 }
+
 .terceira-secao .slide .item {
     width: 200px;
     height: 300px;
@@ -219,7 +226,9 @@ body {
     display: inline-block;
     transition: .5s;
 }
-.terceira-secao .item:nth-child(1), .terceira-secao .item:nth-child(2) {
+
+.terceira-secao .item:nth-child(1),
+.terceira-secao .item:nth-child(2) {
     top: 0;
     left: 0;
     transform: translate(0, 0);
@@ -227,20 +236,25 @@ body {
     width: 100%;
     height: 100%;
 }
+
 .terceira-secao .item:nth-child(3) {
     left: 50%;
 }
+
 .terceira-secao .item:nth-child(4) {
     left: calc(50% + 220px);
 }
+
 .terceira-secao .item:nth-child(5) {
     left: calc(50% + 440px);
 }
+
 /* here n = 0, 1, 2, 3,... */
 .terceira-secao .item:nth-child(n + 6) {
     left: calc(50% + 660px);
     opacity: 0;
 }
+
 .terceira-secao .item .content {
     position: absolute;
     top: 50%;
@@ -252,9 +266,11 @@ body {
     font-family: system-ui;
     display: none;
 }
+
 .terceira-secao .slide .item:nth-child(2) .content {
     display: block;
 }
+
 .terceira-secao .item .content .name {
     font-size: 40px;
     text-transform: uppercase;
@@ -262,12 +278,14 @@ body {
     opacity: 0;
     animation: animate 1s ease-in-out 1 forwards;
 }
+
 .terceira-secao .item .content .des {
     margin-top: 10px;
     margin-bottom: 20px;
     opacity: 0;
     animation: animate 1s ease-in-out 0.3s 1 forwards;
 }
+
 .terceira-secao .item .content button {
     padding: 10px 20px;
     border: none;
@@ -275,24 +293,28 @@ body {
     opacity: 0;
     animation: animate 1s ease-in-out 0.6s 1 forwards;
 }
+
 @keyframes animate {
     from {
         opacity: 0;
         transform: translate(0, 100px);
         filter: blur(33px);
     }
+
     to {
         opacity: 1;
         transform: translate(0);
         filter: blur(0);
     }
 }
+
 .button {
     width: 100%;
     text-align: center;
     position: relative;
     bottom: 20px;
 }
+
 .button button {
     font-size: 1em;
     width: 40px;
@@ -304,29 +326,35 @@ body {
     border: 1px solid #000;
     transition: 0.3s;
 }
+
 .button button:hover {
     background: #ababab;
     color: var(--branco);
 }
+
 /* início da página sobre */
-.sobre>h1 {
+.sobre>h1,
+.sobre>h2 {
     background-color: var(--branco);
     color: var(--laranja-fonte);
-    box-shadow: 1cm;
+    display: flex;
     padding: 10px;
-    margin: 10px auto;
+    margin: 5px auto;
     width: 70vw;
     height: 8vh;
 }
+
 .sobre>p {
     background-color: var(--branco);
     color: var(--preto);
     text-align: justify;
+    display: flex;
+    margin: 0 auto;
     line-height: 2em;
     padding: 10px;
-    margin: 0 auto 10px;
     width: 70vw;
 }
+
 footer {
     background: var(--laranja-fundo);
     color: var(--branco);
