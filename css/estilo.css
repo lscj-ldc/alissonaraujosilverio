@@ -201,6 +201,7 @@ body {
     background-image: url('../imagens/portfolio6.jpg');
 }*/
 .terceira-secao {
+    margin: 5px 0;
     position: relative;
     display: flex;
     overflow: hidden;
@@ -358,7 +359,7 @@ body {
 /* início da página serviços */
 .servico h1 {
     color: var(--laranja-fonte);
-    margin: auto;
+    margin: 10px auto;
     width: 80vw;
     display: block;
 }
@@ -383,6 +384,59 @@ body {
     display: flex;
     max-width: 500px;
     height: auto;
+    margin: auto;
+}
+
+.servico .itens img {
+    display: flex;
+}
+
+/* início da página orçamento */
+section.whatsapp {
+    margin: auto;
+    display: flex;
+    width: 400px;
+}
+section.whatsapp i {
+    display: block;
+    margin: auto;
+    font-size: 5em;
+    color: var(--laranja-fonte);
+}
+section.whatsapp button {
+    display: inline-block;
+    margin: auto;
+    background-color: var(--laranja-fonte);
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--branco);
+}
+
+/* inicio da configuração do formulário */
+.formulario form {
+    padding: 10px;
+    margin: 10px auto;
+    color: var(--branco);
+    background-color: var(--laranja-fonte);
+}
+.formulario label {
+    display: flex;
+    margin: auto;
+    padding: 5px;
+    width: 80vw;
+}
+.formulario input {
+    width: 80vw;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    margin: auto;
+}
+.formulario textarea {
+    width: 80vw;
+    border-radius: 5px;
+    display: flex;
     margin: auto;
 }
 
