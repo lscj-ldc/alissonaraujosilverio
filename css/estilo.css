@@ -360,6 +360,7 @@ body {
     color: var(--laranja-fonte);
     margin: auto;
     width: 80vw;
+    display: block;
 }
 
 .servico p {
@@ -367,6 +368,7 @@ body {
     text-align: justify;
     margin: 10px auto;
     max-width: 70vw;
+    display: flex;
 }
 
 .servico .servico-imagem {
@@ -374,23 +376,14 @@ body {
     margin: 10px auto;
     max-width: 80vw;
     height: auto;
+    display: flex;
 }
 
 .servico .servico-imagem img {
-    display: inline;
+    display: flex;
     max-width: 500px;
     height: auto;
     margin: auto;
-}
-.servico .servico-imagem-um {
-    width: 80vw;
-    margin: auto;
-}
-.servico .servico-imagem-um figure img {
-    display: inline-block;
-    flex: auto;
-    margin: auto;
-    height: auto;
 }
 
 footer {
