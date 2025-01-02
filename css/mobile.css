@@ -38,6 +38,13 @@ Grandes Telas: acima de 1200px*/
     }
 }
 
+@media (max-width: 580px) {
+    .servico-imagem img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 @media (max-width: 800px) {
     .nav .hideOnMobile {
         display: none;
