@@ -97,16 +97,16 @@ body {
     display: none;
 }
 
-/* início da primeira section */
+/* início da primeira section 
 .primeira-secao figure img {
     padding: 4px;
     margin: auto;
     width: 50%;
     height: auto;
-}
+}*/
 
 .primeira-secao figure img {
-    width: 60%;
+    width: 30%;
     height: auto;
     margin: 4px auto;
     display: flex;
