@@ -90,6 +90,7 @@ body {
 .sidebar a {
     width: 100%;
     color: var(--preto);
+    background-color: var(--branco);
 }
 
 .nav .menu-button {
@@ -277,7 +278,6 @@ body {
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-
     .terceira-secao .prev,
     .terceira-secao .next,
     .terceira-secao .text {
