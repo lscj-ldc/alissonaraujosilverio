@@ -183,14 +183,15 @@ body {
 
 /* configuração da apresentação */
 /* Contêiner de apresentação de slides*/
-.slideshow-container {
+.terceira-secao .slideshow-container {
     max-width: 60vw;
     position: relative;
     margin: auto;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
+}
+
+/* Next & previous buttons */
+.terceira-secao .prev,
+.terceira-secao .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -203,21 +204,22 @@ body {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right */
+.terceira-secao .next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.terceira-secao .prev:hover,
+.terceira-secao .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.terceira-secao .text {
     color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
@@ -225,19 +227,19 @@ body {
     bottom: 8px;
     width: 100%;
     text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
+}
+
+/* Number text (1/3 etc) */
+.terceira-secao .numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
-  
-  /* The dots/bullets/indicators 
-  .dot {
+}
+
+/* The dots/bullets/indicators 
+.terceira-secao .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -248,28 +250,41 @@ body {
     transition: background-color 0.6s ease;
   }
   */
-  .active, .dot:hover {
+.terceira-secao .active,
+.terceira-secao .dot:hover {
     background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
+}
+
+/* Fading animation */
+.terceira-secao .fade {
     animation-name: fade;
     animation-duration: 1.5s;
-  }
-  .fade img {
+}
+
+.terceira-secao .fade img {
     width: 80vw;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .terceira-secao .prev,
+    .terceira-secao .next,
+    .terceira-secao .text {
+        font-size: 11px
+    }
+}
+
 /* início da página sobre */
 .sobre>h1,
 .sobre>h2 {

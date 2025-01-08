@@ -61,7 +61,7 @@ Grandes Telas: acima de 1200px*/
         height: auto;
     }
 }
-
+/*
 @media (max-width: 900px) {
     .terceira-secao {
         position: relative;
@@ -76,7 +76,7 @@ Grandes Telas: acima de 1200px*/
         box-shadow: 0 30px 50px #dbdbdb;
     }
 }
-
+*/
 /* início da configuração da página sobre */
 @media (max-width: 554px) {
 
